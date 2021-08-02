@@ -1,0 +1,91 @@
+body {
+        background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0.6)),url(/images/homePage-background.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+}
+h1, h2, h3, h4, h5, h6, input, font {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;  
+    
+}
+.loginPpage {
+    width: 360px;
+    padding: 10% 0 0;
+    margin: auto;
+}
+font {
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+}
+.form {
+    position: relative;
+    z-index: 1;
+    background: rgb(83, 1, 1);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 1;
+    background:rgb(185, 102, 102);
+    width: 100%;
+    border: 0;
+    margin: 0 0 16px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form textarea {
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+    outline: 1;
+    background:rgb(185, 102, 102);
+    width: 100%;
+    border: 0;
+    margin: 0 0 16px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline:  0;
+    background: maroon;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+.form button:hover, .form button: active {
+    background: #43a047;
+}
+
+.form .message{
+    margin: 15px 0 0;
+    color: yellow;
+    font-size: 12px;
+}
+.form .message a {
+    color: pink;
+    text-decoration: none;
+}
+
+.form .registerForm {
+    display: none;
+}
+
+.formNotification {
+    background-color: lightgreen;
+    color: darkcyan;
+}

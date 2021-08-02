@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookUni Recipes</title>
+    <link rel="stylesheet" href="cookUniStyle.css">
+    
+</head>
+<body >
+    <h1 align="center">Welcome to CookUni Recipes</h1>
+    <div class="form">
+    
+        <font>RecipeID: </font><input type = "text" id = "recipeID"></input><br>
+        <font>Meal: </font><input type = "text" id = "meal"></input><br>
+        <div id = "foodImage"></div> <!--- food image pic goes here -->
+        <br><br><font>FoodImageURL: </font><input type = "text" id="foodImageURL"></input><br>
+       
+        <div id = "categoryImageDiv"></div> <!--- category image pic goes here -->
+        <div> 
+        <font>Category: </font><select name="category" id="category" select="">
+            <option selected>Select category...</option>
+            <option id="vegetables">Vegetables and legumes/beans</option>
+            <option id="fruits">Fruits</option>
+            <option id="grain">Grain Food</option>
+            <option id="dairy">Milk, cheese, eggs and alternatives</option>
+            <option id="meats">Lean meats and poultry, fish and alternatives</option>
+            <option id="burgers">Burgers and Sandwiches</option>
+        </select><br><br>
+        </div> 
+        
+        <br><br><font>CategoryImageURL: </font><input type = "text" id="categoryImageURL"></input><br>
+        <font>Description: </font><textarea type = "text" id="description"></textarea><br>
+        
+        <font>Ingredients: </font><input type = "text" id="ingredients"></input><br>
+        <font>Preparation Method: </font><textarea type = "text" id="prepMethod"></textarea><br><br>
+        <font>Likes: </font><input type = "text" id="likes"></input><br>
+        <button id="insert">Share it</button><br>
+        <button id="select">Select it</button><br>
+        <button id="update">Update it</button><br>
+        <button id="clearAllEntries">Clear All Entries</button><br>
+        
+    </div>
+    <div class="formNotificationDiv" id="formNotificationDiv">
+        <!-----form notification goes here through the dom -->
+    </div>
+
+        <!------- <button id="delete">Delete it</button>  ------>
+        <hr>
+       
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
